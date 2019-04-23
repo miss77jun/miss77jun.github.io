@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>谢腾宇的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-04-23T11:48:48.887Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>胖胖</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>word写作</title>
+    <link href="http://yoursite.com/2019/04/18/word%E5%86%99%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/04/18/word写作/</id>
+    <published>2019-04-18T13:09:00.000Z</published>
+    <updated>2019-04-23T11:48:48.887Z</updated>
+    
+    <content type="html"><![CDATA[<p>在硕士毕业论文完成之际，记下编辑过程中几个痛点。</p><h1 id="Endnote自定义style"><a href="#Endnote自定义style" class="headerlink" title="Endnote自定义style"></a>Endnote自定义style</h1><p>整篇论文共引用了100篇参考文献，如果像本科一样手动编辑参考文献，impossible！于是，这一工种交给了Endnote老大哥。<br>首先安装Endnote插件(略)。</p><h3 id="通用模板的自定义"><a href="#通用模板的自定义" class="headerlink" title="通用模板的自定义"></a>通用模板的自定义</h3><p>论文模板参考文献以GB/7114为标准，所以需要下载GB/7114的style。<br>但麻烦的是，部分格式与GB/7114并不一致。这就需要在GB/7114的基础上自定义了。</p><p>首先进入Chinese Standard GB/T7114 (Author-Year)编辑页</p><ol><li>页码显示格式设置<br><img src="/images/page_number.png" alt=""></li><li>期刊名称格式<br><img src="/images/journal_name.png" alt=""></li><li>Bibliography参考文献目录设置<br>3.1 设置Tenplate格式：确定文献类型分类及各类文献的通用格式<br>   eg. Author. Title [J]. Journal, Year, Volume|(Issue)|: Pages|.<br>3.2 待发表文献特殊格式DOI<br>   Author. Title [J]. Journal, Year, |`DOI’: DOI|: Pages|.<br>   <img src="/images/feild_substitutions.png" alt=""><br>3.3 作者排名设置。第三个以后的作者用et al.代替，但这里默认是针对英文文献，中文文献咋办呢？这个问题后面解决。<br><img src="/images/author_list.png" alt=""><br>测试发布文字ceshi。</li></ol><h3 id="待发表文献特殊格式DOI"><a href="#待发表文献特殊格式DOI" class="headerlink" title="待发表文献特殊格式DOI"></a>待发表文献特殊格式DOI</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在硕士毕业论文完成之际，记下编辑过程中几个痛点。&lt;/p&gt;
+&lt;h1 id=&quot;Endnote自定义style&quot;&gt;&lt;a href=&quot;#Endnote自定义style&quot; class=&quot;headerlink&quot; title=&quot;Endnote自定义style&quot;&gt;&lt;/a&gt;Endnote自定
+      
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://yoursite.com/categories/Tools/"/>
+    
+      <category term="Usage" scheme="http://yoursite.com/categories/Tools/Usage/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>PyMol command</title>
+    <link href="http://yoursite.com/2019/03/27/pymol-command/"/>
+    <id>http://yoursite.com/2019/03/27/pymol-command/</id>
+    <published>2019-03-27T07:36:04.000Z</published>
+    <updated>2019-04-23T08:02:53.512Z</updated>
+    
+    <content type="html"><![CDATA[<p># Create PYMOL script: .pml</p><p>#   stick_radius -adjust thickness of atomic bonds<br>set stick_radius = 0.3</p><p>#   mesh_radius -to adjust thickness of electron<br>#   density contours<br>set mesh_radius = 0.02</p><p>#   bg_color —set the background color<br>bg_color white</p><p>#   load pdb file and give it an object name<br>load $TUT/1hpv.pdb, native<br>load c.0.0.pdb,Rosetta</p><p># output sequence file<br>save 1hpv.fasta</p><p>#    set color<br>color forest,native</p><p>#    align<br>align Rosetta,native</p><p>hide lines<br>show cartoon<br>bg white<br>set antialias,2<br>remove resn HOH<br>remove resn HET<br>set ray_trace_mode , 3<br>set cartoon_oval_length,1.2<br>set cartoon_oval_width,0.4<br>set cartoon_loop_radius,0.3<br>set cartoon_rect_length,1.2<br>set cartoon_rect_width,0.4<br>set light_count,0</p><p>set reflect_power,1500<br>set spec_reflect,2.0</p><p>set ray_shadow,0<br>set ray_shadow,0<br>#ray 600,600</p><p>#clolor:spectrum count, rainbow_rev, <em>.pdb, byres=1<br>#set cartoon_transparency, 0.5, </em>.pdb  # 50% transparent, the object name is optional</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;# Create PYMOL script: .pml&lt;/p&gt;
+&lt;p&gt;#   stick_radius -adjust thickness of atomic bonds&lt;br&gt;set stick_radius = 0.3&lt;/p&gt;
+&lt;p&gt;#   mesh_radius -t
+      
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://yoursite.com/categories/Tools/"/>
+    
+    
+      <category term="PyMol" scheme="http://yoursite.com/tags/PyMol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>差分进化算法与遗传进化算法</title>
+    <link href="http://yoursite.com/2019/03/11/%E5%B7%AE%E5%88%86%E8%BF%9B%E5%8C%96%E7%AE%97%E6%B3%95%E4%B8%8E%E9%81%97%E4%BC%A0%E8%BF%9B%E5%8C%96%E7%AE%97%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/03/11/差分进化算法与遗传进化算法/</id>
+    <published>2019-03-11T11:52:17.000Z</published>
+    <updated>2019-04-16T14:09:12.951Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/hehainan_86/article/details/38398031" target="_blank" rel="noopener">差分进化算法与遗传进化算法的区别。</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/hehainan_86/article/details/38398031&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;差分进化算法与遗传进化算法的区别。&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="http://yoursite.com/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mathtype installation</title>
+    <link href="http://yoursite.com/2019/02/19/Mathtype-installation/"/>
+    <id>http://yoursite.com/2019/02/19/Mathtype-installation/</id>
+    <published>2019-02-19T08:12:06.000Z</published>
+    <updated>2019-04-23T08:02:53.512Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装Mathtype"><a href="#安装Mathtype" class="headerlink" title="安装Mathtype"></a>安装Mathtype</h2><p>安装包：百度云盘Mathtype 6.9.zip</p><h2 id="设置office-2013启动项"><a href="#设置office-2013启动项" class="headerlink" title="设置office 2013启动项"></a>设置office 2013启动项</h2><p>复制mathtype安装路径下的源文件：</p><ol><li>C:\Program Files (x86)\MathType\Office Support\64\MathType Commands 6 For Word 2013.dotm</li><li>C:\Program Files (x86)\MathType\Office Support\64\WordCmds.dot</li><li>C:\Program Files (x86)\MathType\MathPage\64\MathPage.wll</li></ol><p>粘贴至Office安装路径，eg. C:\Program Files\Microsoft Office\Office15\STARTUP</p><p>备注：默认64位Windows系统；若为32位，更改对应路径。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;安装Mathtype&quot;&gt;&lt;a href=&quot;#安装Mathtype&quot; class=&quot;headerlink&quot; title=&quot;安装Mathtype&quot;&gt;&lt;/a&gt;安装Mathtype&lt;/h2&gt;&lt;p&gt;安装包：百度云盘Mathtype 6.9.zip&lt;/p&gt;
+&lt;h2 id=&quot;设
+      
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://yoursite.com/categories/Tools/"/>
+    
+      <category term="Installation" scheme="http://yoursite.com/categories/Tools/Installation/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TPO33L3</title>
+    <link href="http://yoursite.com/2019/01/18/TPO33L3/"/>
+    <id>http://yoursite.com/2019/01/18/TPO33L3/</id>
+    <published>2019-01-17T16:00:00.000Z</published>
+    <updated>2019-04-16T14:09:12.947Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>Lecture</th></tr></thead><tbody><tr><td>Listen to <del>a</del> part of a lecture in a biology class.</td></tr><tr><td><del>we’ve seen</del>(<strong>Way in</strong>) which animals adapt to their enviroment are often quite <del>in genus</del>(<strong>ingenious 有独创性的</strong>) actually.</td></tr><tr><td>And <del>this</del>(<strong>as</strong>) an exmple (<strong>this</strong>), let me tell you  (<strong>about</strong>) a <del>kind of</del> fish, a group of fish, <del>noticed in an althenial ways</del>(<strong>known as the Nototheniods</strong>).</td></tr><tr><td>There <del>are</del>(<strong>is over</strong>) 90 konwn <del>specises</del>(<strong>species</strong>) of Nototheniods and they inhabit <del>in</del> both shallow and very deep water(<strong>s</strong>), mostly aroud Antarctica.</td></tr><tr><td>Many <del>of is</del>(<strong>are fairly</strong>) small<del>. Those</del>(<strong>, though the</strong>) largest speciese can weght up to 150 kilograms.</td></tr><tr><td>Notothenioids can (<strong>be</strong>) identified by their large eyes, which are covered by a thick <del>entholating</del>(<strong>insulating 隔热的</strong>) layer (of) <del>a</del>clear tissue(<strong>组织</strong>).</td></tr><tr><td>Th<del>ese</del>(<strong>is</strong>) tissue<del>s</del> protects their eyes from freezing.</td></tr><tr><td>Remeber, the freezing point of ocean water, salt water is lower than (<strong>for</strong>) fresh water, -1.9 degree C<del>u</del><strong>e</strong>lsius.</td></tr><tr><td>So it can get a lot colder for fish in (an) ocean, se<del>a</del><strong>y</strong>, than in a river or lake.</td></tr><tr><td>So, this means that the <del>oround</del>(<strong>ocean</strong>) water<strong>s</strong> around Antarctica are cold enough to freeze most type of fish.</td></tr><tr><td>But Notothenioids don’t freeze. In fact, they thrive.</td></tr><tr><td>They <del>come</del>(<strong>account for some</strong>)  95 percent of all fish in southern ocean, the ocean <del>is</del>(<strong>that</strong>) suround<del>ed</del><strong>s</strong> in Antarctica.</td></tr><tr><td>So, how unusual is that?</td></tr><tr><td>To have a sigle family of fish dominat<del>e</del><strong>ing</strong> <del>in</del>(<strong>an</strong>) <strong>entire</strong> ocean, I mean, think of… se<del>a</del><strong>y</strong> <del>tempary</del>(<strong>tropical 热带的 or temperate</strong>) marine environments which have <del>increadablly</del>(<strong>incredibly 难以置信的</strong>) diverse fish populations. (<strong>Coral reefs 珊瑚礁,</strong>) for example, (<strong>support over</strong>) with 4,000 types of fish <del>among</del>(<strong>along</strong>) with <del>bangges</del>(<strong>sponges 海绵动物, crustaceans 甲壳纲动物,</strong>) and many other oganis<del>o</del>ms.</td></tr><tr><td>So, (<strong>exactly</strong>) when and how did the Nototheniods come to dominate in sothern ocean?</td></tr><tr><td>Well, around <del>4</del><strong>3</strong>0 million years ago, the waters around Antarctica were a lot warmer (<strong>they are</strong>) than today.</td></tr><tr><td>U<del>h</del><strong>m</strong>…, at that time Antoctical was connected to <del>southern</del>(<strong>South</strong>) America, which means warm air from the north could flow <del>south water</del>(<strong>southward 南移</strong>) and <del>hit</del>(heat) up the Antoctical waters.</td></tr><tr><td>The caster water arround Antoctical was relatively warm.</td></tr><tr><td>(<strong>Because the water around Antarctica then was relatively warm,</strong>) it<del>‘s ~</del>~aported~~(<strong>supported</strong>) many types of fish and we know this from fossil evidence.</td></tr><tr><td>But the 90  <del>earth</del>(<strong>or so</strong>) speciese of Nototheniods (<strong>that exist</strong>) today didn’t exist at all <del>by</del>(<strong>back</strong>) th<del>a</del><strong>e</strong>n.</td></tr><tr><td>In fact, only one (<strong>ancestral</strong>) Nototheniods <del>speciese</del>(species) existed.</td></tr><tr><td>But somewhere between 5 million <del>to</del>(and) 14 millin years ago, two major changes took place.</td></tr><tr><td>First, what we call a chan<del>s</del><strong>c</strong>e mutation, a tiny genetic change occured in that one Nototheniods species<del>e</del>.</td></tr><tr><td>It<del>‘</del>s DNA allow<strong>ed</strong> for the ptoduction of a special protein, a protein (<strong>that</strong>) prevents the fish from freezing.</td></tr><tr><td>The way this…(<strong>this</strong>) anti-freeze protein works is: it binds t<del>he</del>o any ice crystals (<strong>that</strong>) form<del>ed</del> inside the fish.</td></tr><tr><td>This binding action prevents the ice crystals  from <del>going</del>(<strong>growing</strong>) larger and this is what prevents Nototheniods form freezing.</td></tr><tr><td>Now, at that time, (<strong>the</strong>) waters (<strong>the Notothenioids</strong>) inhabi<strong>ted</strong> was still <del>in</del>(<strong>not</strong>) freezing cold, so the protein didn’t really make a difference as far as the fish<del>e</del>‘s survival.</td></tr><tr><td>But this would chang<del>ed</del> because (<strong>in</strong>) the same perio<del>u</del>d of geologic time there was a <del>dr</del>shift in the earth<strong>‘s</strong> continental place.</td></tr><tr><td>Cont<strong>i</strong>nental drift caused Antarctica to move apart from (<strong>the landmass of</strong>) South America and to drift into the southern <del>polon</del>(<strong>polar</strong>) region <strong>南极极地地区</strong>.</td></tr><tr><td>This resulted in (<strong>a</strong>) powerful water current <del>in</del> <strong>en</strong>circling <strong>包围</strong> Antoctical, which prevent the Antoctic waters from mixing with warmer water.</td></tr><tr><td>So <del>this</del>(<strong>the</strong>) <del>sudden oscien</del>(<strong>southern ocean</strong>) isolated form <del>the</del>(<strong>that</strong>) warm air flow(airflow) the north, cool down drastically <strong>彻底地</strong> to the kinds of sub-freezing tempratures (<strong>we</strong>) associate with it taday.</td></tr><tr><td>Now, most <del>of</del> fish spciese<del>s</del> could<strong>n’t</strong> survive in this <del>freeze</del>(<strong>frigid</strong>) enviroment and <del>maybe</del>(<strong>they</strong>) <strong>be</strong>come extinct.</td></tr><tr><td>But that one Nototheniods species<del>e</del> with <del>the</del>(<strong>its</strong>) unique ability to produce that anti-freeze protein <del>survived</del>thrived.</td></tr><tr><td>It had virt<strong>u</strong>ally the enrire <del>sudden</del>(<strong>southern</strong>) ocean to itself.</td></tr><tr><td>So<del>,</del>(<strong>?</strong>) Well,  there was little or no competition for food space.</td></tr><tr><td>You might think of <del>that’s</del>(<strong>as…um…as a…</strong>) a kind of echological vacu<strong>u</strong>m <strong>真空</strong> and the Notothenioids  exploi<del>ta</del>ted fully.</td></tr><tr><td>The speciese  <del>might aggreeded</del>(<strong>migrated 迁移</strong>) into different habitat<del>it</del><strong>s</strong> <del>to all</del>(<strong>throughout</strong>) the <del>sudden</del>(<strong>southern</strong>) ocean. And its population increased dramatically with (<strong>virious</strong>) sub-populations <del>might intergrated</del>(<strong>migrating</strong>) into different parts of the ocean.</td></tr><tr><td>Over time, these sub populations in all (<strong>those</strong>) different those habitats , well, they develo<del>p</del>ped very different physical <del>trees</del>(<strong>traits 特质</strong>).</td></tr><tr><td>They adapted to survive in <del>the</del>(<strong>their</strong>) particular echological nich<strong>e</strong> .</td></tr><tr><td>Their position within <del>the</del>(<strong>a particucal</strong>) echosystem. we call this type of species<del>e</del> <del>diverse vocation</del> (<strong>diversification 多样化</strong>) within a species<del>e</del> adaptive radiation.</td></tr><tr><td>And what an adaptive radiation is?</td></tr><tr><td>An evolution process by which a parent<del>s</del> species<del>e</del> rapdily undergo<strong>e</strong>s changes resulting <strong>in</strong> various new speciese in order to <del>feel multical</del>(<strong>fill multiple</strong>) echological niches.</td></tr><tr><td>so in the case of <strong>the</strong> Nototheniods , <strong>that</strong> single species<del>e</del> start<del>ing</del><strong>ed</strong> <del>colonyzing</del>(<strong>colonizing</strong>) <del>organizing anti</del>(<strong>empty</strong>) habitat<del>e</del>s  to such (<strong>an</strong>) extend into it envolved into <strong>a</strong> broad range of new species<del>e</del>, the 90 <del>also</del>(<strong>or so</strong>) Nototheniod species<del>e</del> that we have today.</td></tr><tr><td>So, let me switch to adaptive radiation which regards to another species<del>e</del> that’s also been very successful.</td></tr></tbody></table></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Lecture&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Listen to &lt;del&gt;a&lt;/del&gt; part of a lecture
+      
+    
+    </summary>
+    
+      <category term="English Learning" scheme="http://yoursite.com/categories/English-Learning/"/>
+    
+      <category term="Translation" scheme="http://yoursite.com/categories/English-Learning/Translation/"/>
+    
+    
+      <category term="English Learning" scheme="http://yoursite.com/tags/English-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TPO48L2</title>
+    <link href="http://yoursite.com/2019/01/17/TPO48L2/"/>
+    <id>http://yoursite.com/2019/01/17/TPO48L2/</id>
+    <published>2019-01-16T16:00:00.000Z</published>
+    <updated>2019-04-16T14:09:12.947Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>Lecture</th></tr></thead><tbody><tr><td>Listen to a part of a lecture in an earth science class.</td></tr><tr><td>The class has being dicussing volcanos.</td></tr><tr><td>OK, we know the earth surface is make up of tecotonic plats and i’s huge callapes rockey tops are slowly sliting over or under or path each other.</td></tr><tr><td>And we said most of rosen volcanos across the bondry of these tecotonic when you have hot moutain rocks rising up to betwwen the plats.</td></tr><tr><td>But, some volvanos occur not the edges, but or in the middle of contmental or oshianic plate.</td></tr><tr><td>The willilands, for example. A thousands of kilometers away from any plate bound and yet.</td></tr><tr><td>You have vast mounts of magama, moto rocker lava.</td></tr><tr><td>Flowing up through the earth crost which mean of course, the volcanic activity there can’t be explained simply by plate tecotonics.</td></tr><tr><td>So, how do we explain this volcanic mananis, these exceptions to the general rule.</td></tr><tr><td>Well,back in 1863 a geophisysts by the name of Whileson came up with the hots bot theory to explain how this particular type volcanic activity occured and can gwan for maybe a tens or even hundreds of years.</td></tr><tr><td>hot pots exist below .</td></tr></tbody></table></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Lecture&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Listen to a part of a lecture in an eart
+      
+    
+    </summary>
+    
+      <category term="English Learning" scheme="http://yoursite.com/categories/English-Learning/"/>
+    
+      <category term="Translation" scheme="http://yoursite.com/categories/English-Learning/Translation/"/>
+    
+    
+      <category term="English Learning" scheme="http://yoursite.com/tags/English-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TPO19L3</title>
+    <link href="http://yoursite.com/2019/01/16/TPO19L3/"/>
+    <id>http://yoursite.com/2019/01/16/TPO19L3/</id>
+    <published>2019-01-15T16:00:00.000Z</published>
+    <updated>2019-04-16T14:09:12.947Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>Lecture</th><th></th></tr></thead><tbody><tr><td>Listen to part of <del>the</del>(a) lecture in the marine biology class.</td><td></td></tr><tr><td>Ok, today we are goinng to continue our discussion of plant <del>living</del>(life) coastal(沿海的) <em>sv</em>(salt) <em>marshes</em>(沼泽) of <del>n</del>(N)orth <del>in</del> America.</td><td></td></tr><tr><td><del>So</del>(Salt) marshes are <del>monglise</del>(among the least inviting) environment(s) for plants.</td><td></td></tr><tr><td>The water (is) salty. There is little shade.</td><td></td></tr><tr><td>And the oce(a)n tide<del>s</del> come(s) in and out <em>constantly</em> <del>fluting</del>(flooding: 淹没) the marsh.</td><td></td></tr><tr><td>So the <del>variouty</del>(variety) of plants found in marshes is limited.</td><td></td></tr><tr><td>But there is <del>plg draves</del>(a plant genus that thrives) there: the Spartina.</td><td></td></tr><tr><td>In fact, (the) Spartina (genus: 种类物) is <del>a</del>(the) dominant(占优势的) plant found in (salt) marshes.</td><td></td></tr><tr><td>You can find one type of (the) Spartina, salt <del>grash</del> <del>called gras</del>(Saltmarsh Cordgrass) growing in low marsh area(s).</td><td></td></tr><tr><td>In higher marsh area(s), you are likely to find  Spartina (commonly) called <del>smth</del>(Salt-meadow Hay).</td><td></td></tr><tr><td>So how is (the) Spartina able to survive in (an) environment that would kill most plants.</td><td></td></tr><tr><td>Well, it’s because <del>smg</del>(salt marsh grasses) (have) found ways to <del>adjust</del>(adapt) to the conditions <del>well</del>(there).</td><td></td></tr><tr><td>Fisrt of all, they are able to withstand <del>in</del> highly <del>sailing</del>(saline:盐的) conditions<del>, ~~.</del>an~~ one really intersting <del>and outstation</del>(adaptation is the) ability  to reverse the process of <em>osmosis</em>(渗透作用).</td><td></td></tr><tr><td>Typically, the process of osmosis works, well, when water moves to the wall of (a) plant cell, it will move from the side contaning (water) with the lowest amount of salt into the side containing the highest amount of salt.</td><td></td></tr><tr><td>So imagine what <del>will</del>(would) happen if a typical plant <del>certainly</del>(suddenly) found itself <del>sode</del>(in salt) water.</td><td></td></tr><tr><td>The water contained in the plant cells , that is <del>what</del>(water) with (very) little salt<del>s</del>,~~ will<del>(would) be ~~darn</del>(drawn) out toward the <del>sea water</del>(seawater,) <del>what</del>(water) with a lot of salt.</td><td></td></tr><tr><td>So you can see the fresh water contained in the plant will be removed and the plant <del>would</del>(will) quickly loss all its water and <em>dhd</em>(dehydrate).</td><td></td></tr><tr><td>But what about (the) Spartina?</td><td></td></tr><tr><td>Well, they allow a certain amount of salt to  enter <del>themselves</del>(their cells,) bringing <del>a</del>(the) <del>certain</del>(salt) <del>contant</del>(content) of water <del>in</del>(within) the plant to a slightly higher <del>consontration</del>(concentration) than that of the surrounding <del>of the</del> sea~~ ~~water .</td><td></td></tr><tr><td>So instead of fresh water moving out of the plant cells, <del>sauce</del>(salt) from the sea~~ <del>water enters reverse ~~as</del> osmosis, and this actually strengthens <del>themselves</del>(the cells).</td><td></td></tr><tr><td>Another <del>addapt ation</del>(adaptation) <del>of</del>(to) the salty enviroment is  the ability to <del>exgreed</del>(excrete:分泌) <del>exes</del>(excess：过量的) salt back to the enviroment.</td><td></td></tr><tr><td>That (is) why you might see (a) Spartina <del>shimering</del>(shimmering:闪烁) in the sunlight.</td><td></td></tr><tr><td>What is reflecting the light is not salt from the sea~~ <del>water (that has) ~~exaprated</del>(evaporated:蒸发), although that is a good guess.</td><td></td></tr><tr><td>But it is actually the salt that came from within the plant. Pretty cool, eh?</td><td></td></tr><tr><td>You can really impress your friend(s) and family with that little <del>hitbit</del>(tidbit:趣闻) in the next time you are in <del>the</del>a shore marsh.</td><td></td></tr><tr><td>But <del>cobing</del>(coping) with salt is not only chanllenge for plants in the (salt) marsh.</td><td></td></tr><tr><td><del>SW</del>(Soil) there is dense and very low in <del>oxgen</del>(oxygen).</td><td></td></tr><tr><td>So Spartinas have air tubes.</td><td></td></tr><tr><td>Air <del>under</del>(enters) through <del>tily</del>(tiny) opennings on the leaves, the tubes provide direct <del>pipelines</del>(pipe line) for the oxygen, carring it down leaves through the stems(茎) and into the roots where it is needed.</td><td></td></tr><tr><td>If you pull up (a) Spartina, you might (even) notice somen reddish mud on some (of) the roots.</td><td></td></tr><tr><td>This is cause(d) <del>biococygon</del>(by oxygen), reacting <del>by the sy and soyile</del>(with iron sulfide 硫化铁 in the soil), and (it) produces <del>oxygen and oxideor</del>(iron oxide:氧化铁或者是铁锈) or rust.</td><td></td></tr><tr><td>Now, although the Spartina have adapted several chemical and physical <del>magnisoms</del>(machanisms) that allow them to <del>survive</del>(thrive:茁壮成长) in salt water and to <del>fide</del>(feed) <del>the</del> oxygen in <del>the</del>(their) roots. There is yet another <del>espect</del>(aspect) of harsh(残酷的) enviroment that <del>it</del>(they) have to apapt to: the force of the tides and the <del>cational</del>(occasional) violen<del>ce</del>t <del>the</del> storms.</td><td></td></tr><tr><td>Wind and water constantly crash(ing) into these plants. So as you might have guessed, they’ve developed (a) means of (solidly 坚固的anchoring 锚定) into the soil.</td><td></td></tr><tr><td>How? Well, they have tough <del>sodisom</del>(sort of)  underground stems called <del>rythom</del>(rhizome).</td><td></td></tr><tr><td>Rhizome from one plant grow <del>with</del>through the <del>mudy</del>(muddy) soil and (interlock:互锁) with <del>the</del>(those of other) nearby plants.</td><td></td></tr><tr><td>The plants form a kind of <del>cololi</del>(colony:菌群)， a community (that) will thrive and <em>perish</em> 死亡 together. Because alone <del>and</del>，as single plants, they can’t survive.</td><td></td></tr><tr><td>Of course the plants (in these colonies) also need tough <del>reziline</del>(resilient:可迅速恢复的) stems obove the soil.</td><td></td></tr><tr><td>Stems (that) can bend a lot but not break as water constantly crushes into them.</td><td></td></tr><tr><td>So in addition to interlocking underground rhizomes, thay have yet another addaptation, and that is… well, (we are) back to reverse osmosis again.</td><td></td></tr><tr><td><del>so</del>(By) <del>justing</del>(adjusting) as <del>modic</del>(osmotic:渗透的) pressure so <del>itself</del>(that the cells are) always <del>in folidid</del>(inflated:膨胀). The plant is able to withstand great pressure before <del>slapping</del>(slapping:拍打).</td><td></td></tr><tr><td>So Spartina (may) look like simple marsh <del>gred</del>(grass).</td><td></td></tr><tr><td>But <del>the</del>(they are) really (a) wonder of <del>chemical and physical</del>(chemistry, phisics and) structural enginering that allows them to survive and even thrive <del>with</del>(in an) enviroment in which most <del>other</del> plants will <em>wilt</em>(枯萎) and die <del>with</del>(within) hours.</td><td></td></tr></tbody></table></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Lecture&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Listen to part of &lt;del&gt;the&lt;/de
+      
+    
+    </summary>
+    
+      <category term="English Learning" scheme="http://yoursite.com/categories/English-Learning/"/>
+    
+      <category term="Translation" scheme="http://yoursite.com/categories/English-Learning/Translation/"/>
+    
+    
+      <category term="English Learning" scheme="http://yoursite.com/tags/English-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TOP26C2</title>
+    <link href="http://yoursite.com/2019/01/15/TOP26C2/"/>
+    <id>http://yoursite.com/2019/01/15/TOP26C2/</id>
+    <published>2019-01-14T16:00:00.000Z</published>
+    <updated>2019-04-16T14:09:12.947Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>对话正文</th><th>关键词</th></tr></thead><tbody><tr><td>Hi,<em>Jean</em>.How was the…uh, the conference, right? The conference on <strong>volunteerism</strong>.That’s <em>where you were</em> last week.</td><td>conference,volunteer</td></tr><tr><td>Yeah. It was great. I met a lot of people from some really amazing organizations that are working in the area．Now it would be a lot easier to get students to volunteer in the community．<em>Plus</em>, I’ve never been to any of the beaches here before．Being at the beach was definitely a plus．</td><td>plus</td></tr><tr><td>Well, I hope you had time to look over the notes from the <em>class you missed</em>．You did get the notes, right?</td><td>notes</td></tr><tr><td><em>Yup</em>．I’ll look them over before tomorrow’s class．</td><td>Yup.对陈述的肯定。</td></tr><tr><td>Good．And let me know if you have any questions.</td><td>question</td></tr><tr><td>Well, there is something that I wanted to ask you now．It’s about something I noticed at the beach．</td><td>beach</td></tr><tr><td>Oh, what’s that?</td><td></td></tr><tr><td>Well, see, there are a lot of <strong>jellyfish</strong> there, floating in the water.</td><td>jellyfish</td></tr><tr><td>That couldn’t have been pleasant.</td><td>那不可能是愉快的。</td></tr><tr><td>Not for <em>swimming</em>. But it was interesting. I mean, the jellyfish were glowing．I swear they were．And I am wondering what that’s about．</td><td>glowing</td></tr><tr><td>Ah, glowing jellyfish．That is interesting. Uh, it’s called <strong>bioluminescence</strong>．And actually we are going to talk about it later in the <strong>semester</strong>．Basically, bioluminescence is light that’s produced by a <strong>chemical reaction</strong>.</td><td>bioluminescence：生物发光；chemical reaction</td></tr><tr><td>Really? Inside the jellyfish?</td><td></td></tr><tr><td>Well, not all jellyfish, about half of them．Actually, a lot of <strong>marine organisms</strong> have <em>this ability</em>, especially in <em>deeper</em> parts of the ocean.</td><td>marine organisms:海洋生物</td></tr><tr><td>Oh? I get it. <strong>Like the darker it gets, the more the fish needs light</strong>, right?</td><td>darker, more light</td></tr><tr><td>Well．bioluminescence <em>serves a number of functions</em>．<strong>Most aquatic organisms</strong> use it for communication and for attracting prey．But jellyfish usually use it as a defense against predators．Some jellyfish produce bright flashes of light that confuse predators, to, uh, to startle them．But jellyfish closer to the surface, probably like the jellyfish you saw, they use bioluminescence to hide．The light they produce matches the color of the <strong>dim</strong> sunlight, so they blend in, and, uh, and predators can’t see them．</td><td>aquatic(水生的) organisms；communication and for attracting prey(吸引猎物)；/jellyfish, a defense against predators；startle(使……惊吓) them；jellyfish closer to the surface (表面的), hide, blend in/</td></tr><tr><td>Wow, really? Well, I am looking for a topic for my term paper ,so maybe I could do it on these glowing jellyfish．That’s why I wanted to ask you about them, you know, to find out if there was really something to write about．</td><td>Why ask you about them?</td></tr><tr><td>It’s a great topic．But you’II have to make sure the topic is <em>manageable</em>．Like I said, about half of all jellyfish are bioluminescent, so you may <em>want to look</em> at a particular type of jellyfish or several types that benefit from bioluminescence in the same way, or you could investigate current research on bioluminescence, on, on the chemical process, or…Here’s an idea．You seem to be very <em>involved in local issues</em>．See if you can identify the jellyfish you observed on the beach and how they fit into the local <strong>ecosystem</strong>.</td><td>manageable;a particular type;several types</td></tr><tr><td>Yeah, you know, some of the environmental groups I met last week might even be able to help me．</td><td>/</td></tr></tbody></table></div><h3 id="英文概述"><a href="#英文概述" class="headerlink" title="英文概述"></a>英文概述</h3><h2 id="gt-Jean-went-to-a-conference-as-a-volunteer-Her-biology-teacher-asked-how-the-conference-was-going-She-said-many-other-people-working-in-the-area-which-benefited-to-students-to-volunteer-in-the-community-Later-on-the-teacher-asked-about-her-notes-of-the-project-She-completed-it-and-told-her-teacher-about-the-glowing-jellfish-she-observed-on-the-beach-for-the-topic-of-her-term-paper-The-teacher-told-her-jellyfish-closer-to-the-surface-use-bioluminescence-to-hide-Finally-the-teacher-suggested-her-to-make-sure-the-topic-was-manageable"><a href="#gt-Jean-went-to-a-conference-as-a-volunteer-Her-biology-teacher-asked-how-the-conference-was-going-She-said-many-other-people-working-in-the-area-which-benefited-to-students-to-volunteer-in-the-community-Later-on-the-teacher-asked-about-her-notes-of-the-project-She-completed-it-and-told-her-teacher-about-the-glowing-jellfish-she-observed-on-the-beach-for-the-topic-of-her-term-paper-The-teacher-told-her-jellyfish-closer-to-the-surface-use-bioluminescence-to-hide-Finally-the-teacher-suggested-her-to-make-sure-the-topic-was-manageable" class="headerlink" title="&gt;Jean went to a conference as a volunteer. Her biology teacher asked how the conference  was going. She said many other people working in the area, which benefited to students to volunteer in the community. Later on, the teacher asked about her notes of the project. She completed it and told her teacher about the glowing jellfish she observed on the beach for the topic of her term paper. The teacher told her jellyfish closer to the surface use bioluminescence to hide. Finally, the teacher suggested her to make sure the topic was manageable."></a>&gt;Jean went to a conference as a volunteer. Her biology teacher asked how the conference  was going. She said many other people working in the area, which benefited to students to volunteer in the community. Later on, the teacher asked about her notes of the project. She completed it and told her teacher about the glowing jellfish she observed on the beach for the topic of her term paper. The teacher told her jellyfish closer to the surface use bioluminescence to hide. Finally, the teacher suggested her to make sure the topic was manageable.</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对话正文&lt;/th&gt;
+&lt;th&gt;关键词&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Hi,&lt;em&gt;Jean&lt;/em&gt;.How was the…u
+      
+    
+    </summary>
+    
+      <category term="English Learning" scheme="http://yoursite.com/categories/English-Learning/"/>
+    
+      <category term="Translation" scheme="http://yoursite.com/categories/English-Learning/Translation/"/>
+    
+    
+      <category term="English Learning" scheme="http://yoursite.com/tags/English-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2019/01/13/test/"/>
+    <id>http://yoursite.com/2019/01/13/test/</id>
+    <published>2019-01-13T02:03:08.000Z</published>
+    <updated>2019-04-16T14:09:12.947Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="English Learning" scheme="http://yoursite.com/categories/English-Learning/"/>
+    
+      <category term="Translation" scheme="http://yoursite.com/categories/English-Learning/Translation/"/>
+    
+    
+      <category term="English Learning" scheme="http://yoursite.com/tags/English-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无老师初级跟读听写包-04-翻译</title>
+    <link href="http://yoursite.com/2019/01/06/%E6%97%A0%E8%80%81%E5%B8%88%E5%88%9D%E7%BA%A7%E8%B7%9F%E8%AF%BB%E5%90%AC%E5%86%99%E5%8C%85-04-%E7%BF%BB%E8%AF%91/"/>
+    <id>http://yoursite.com/2019/01/06/无老师初级跟读听写包-04-翻译/</id>
+    <published>2019-01-06T05:56:32.000Z</published>
+    <updated>2019-04-16T14:09:12.947Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="A-study-of-United-Nations"><a href="#A-study-of-United-Nations" class="headerlink" title="A study of United Nations"></a>A study of United Nations</h1><div class="table-container"><table><thead><tr><th>In English</th><th>中文</th></tr></thead><tbody><tr><td>A study of <strong>United Nations</strong> data shows the diet of <strong>north Koreans</strong> has changed little over the past 50 years.</td><td>联合国数据的一项研究表明朝鲜人的饮食在过去的50年里几乎没有变化。</td></tr><tr><td>The American-based magazine National Geographic <strong>examined</strong> the information and reported the findings.</td><td>美国杂志《国家地理》对这一信息进行了研究并报道了研究结果。</td></tr><tr><td>The magazine studied changes in diet from 1961 to 2011 in 22 countries, including North Korea and the United States.</td><td>该杂志研究了22个国家在1961年至2011年饮食的变化，包括朝鲜和美国。</td></tr><tr><td>It looked at the average number of calories consumed in each country.</td><td>考察了每个国家的平均卡路里的消耗量。</td></tr><tr><td>Calories are a measure of energy in food.</td><td>卡路里度量食物能量。</td></tr><tr><td>They can be found in the food we eat and the <strong>liquids</strong> we drink.</td><td>存在于我们吃的食物、喝的饮料中。</td></tr><tr><td>The study found that an adult in  North Korea consumed about  2,103 calories a day in 2011.</td><td>研究发现，在2011年一个朝鲜成人一天小号2,103卡路里。</td></tr><tr><td>That represents an increase from 1,878 calories in 1961.</td><td>相比于1961年消耗2,103卡路里，有所增加。</td></tr><tr><td>But it is much lower than the 2,500 calories  a day suggested by the UN food and <strong>agriculture</strong> organization.</td><td>但是仍比联合国粮农组织所建议的每日2500卡路里低很多。</td></tr><tr><td>The data also suggests the average north Korean <strong>has an unbalanced diet</strong>.</td><td>数据显示朝鲜人平均的饮食不均衡。</td></tr><tr><td>National geographic magazine says the diet of north Koreans is more dependent on grain than any of the 22 countries studied.</td><td>国家地理杂志说相比于其他的22个国家，朝鲜人最依赖于谷物。</td></tr><tr><td>In 1961, North Koreans got more than 70 percent of their <strong>caloric</strong> intake from single <strong>grains</strong> like rice, wheat and <strong>maize</strong>.</td><td>在1961年，朝鲜人超过70%的热量摄入源于单一的谷物，比如大米、小麦、玉米。</td></tr><tr><td>Fifty years later, the percentage was 61 percent.</td><td>五十年后，这个比例在61%。</td></tr><tr><td>North Koreans also eat very little meat.</td><td>朝鲜人吃的肉也非常少。</td></tr><tr><td>The amount of meat consumed dropped sharply during the country’s <strong>famine</strong> in the 1990s.</td><td>在20世纪国家饥荒，肉的消耗量急剧下降。</td></tr><tr><td>But after the food shortages ended, the amount of meat consumed remains low.</td><td>但是在粮荒结束后，肉的消耗量仍然很低。</td></tr><tr><td>An average North Korean consumed 141 grams of meat a day in 1989.</td><td>在1989年，平均一个朝鲜人一天消耗141克肉。</td></tr><tr><td>By 2011, after years of <strong>famines</strong> and <strong>food shortages</strong>, that number had dropped to 67 grams.</td><td>到2011年，在饥荒和粮食短缺多年后，这一数字降到了67克。</td></tr><tr><td>In 1961, North Koreans had a similar diet to people in South Korea.</td><td>在1962年，朝鲜人和韩国人的饮食相似。</td></tr><tr><td>But in the past 50 years, the South Korean diet has improved.</td><td>但是在过去的50年里，韩国人的饮食有所改善。</td></tr><tr><td>The daily <strong>caloric</strong> intake has increased from 2,140 to 3,329 per person.</td><td>每人的日常热量摄入从2,140增加到了3,329。</td></tr><tr><td>The percentage of grains in the South Korean diet has dropped from 82 percent to 43 percent.</td><td>韩国人饮食摄入的谷物的比例从82%降到43%。</td></tr><tr><td>In 1961, meat <strong>represented</strong> just two percent of the South Korean diet.</td><td>在1961年，肉类仅占韩国人饮食的2%。</td></tr><tr><td>到2011年，占12%。</td></tr><tr><td>National Geographic reported that Americans ate the most among the 22 countries studied.</td><td>国家地理报道相比于22个国家，美国人吃得最多。</td></tr><tr><td>It says Americans consumed an average of 3,641 calories a day in 2011.</td><td>据报道，美国人在2011年每天平均消耗3641卡。</td></tr><tr><td>The world average was 2,870 calories.</td><td>而世界平均水平在2870卡。</td></tr></tbody></table></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;A-study-of-United-Nations&quot;&gt;&lt;a href=&quot;#A-study-of-United-Nations&quot; class=&quot;headerlink&quot; title=&quot;A study of United Nations&quot;&gt;&lt;/a&gt;A study of 
+      
+    
+    </summary>
+    
+      <category term="English Learning" scheme="http://yoursite.com/categories/English-Learning/"/>
+    
+      <category term="Translation" scheme="http://yoursite.com/categories/English-Learning/Translation/"/>
+    
+    
+      <category term="English Learning" scheme="http://yoursite.com/tags/English-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无老师初级跟读听写包-03-翻译</title>
+    <link href="http://yoursite.com/2019/01/03/%E6%97%A0%E8%80%81%E5%B8%88%E5%88%9D%E7%BA%A7%E8%B7%9F%E8%AF%BB%E5%90%AC%E5%86%99%E5%8C%85-03/"/>
+    <id>http://yoursite.com/2019/01/03/无老师初级跟读听写包-03/</id>
+    <published>2019-01-03T07:47:42.000Z</published>
+    <updated>2019-04-16T14:09:12.951Z</updated>
+    
+    <content type="html"><![CDATA[<div class="table-container"><table><thead><tr><th>In English</th><th>中文</th></tr></thead><tbody><tr><td>Jordan executed two <strong>Iraqi</strong> prisoners Wednesday, in answer to the <strong>Islamic</strong> state group’s killing of a <strong>Jordanian</strong> hostage in Syria.</td><td>作为对伊斯兰教国家杀害约旦人质的回应，约旦于本周三处决了两个伊拉克囚犯。</td></tr><tr><td>Jordanian officials <strong>hanged</strong> an Iraqi woman <strong>sentenced to death</strong> for her role in a 2005 <strong>suicide bombing</strong> in Amman.</td><td>约旦官员对一位伊拉克女囚实施绞刑，这名女囚由于2005年在阿曼的自杀行爆炸事件被判死刑。</td></tr><tr><td>It also executed another Iraqi who had ties to al-Qaida.</td><td>另一名与基地组织有联系的伊拉克人也被行刑。</td></tr><tr><td>Jordan’s King Abdullah has promised a “<strong>relentless</strong>” war against Islamic State on the group’s own territory.</td><td>约旦国王承诺在伊斯兰国境内发起无情的战争。</td></tr><tr><td>The Islamic State group had demanded the Iraqi woman’s release as part of a prisoner exchange.</td><td>伊斯兰国家曾要求释放伊拉克女囚，交换一个人质。</td></tr><tr><td>Jordan said it had to first have proof that the Jordanian pilot was still alive.</td><td>约旦回应需要证据表明约旦飞行员还活着。</td></tr><tr><td>A video appeared online Tuesday reportedly showing the pilot trapped inside a cage.</td><td>据报道，周二网上出现了一段视频表明飞行员困于笼中。</td></tr><tr><td>A <strong>militant</strong> lit <strong>gasoline</strong> on fire and burned him to death.</td><td>一个激进分子点燃了汽油，将其烧死。</td></tr><tr><td>Jordanian officials said the <strong>execution</strong> took place a month ago.</td><td>约旦官方表示该死刑执行于一个月前。</td></tr><tr><td>Militants captured the pilot in Syria after his plane went down.</td><td>这名飞行员的飞机降落后，激进分子在叙利亚将其抓捕。</td></tr><tr><td>He was serving in the U.S.-led <strong>coalition</strong> <strong>air strikes</strong> against Islamic State targets.</td><td>飞行员在美国领导的联军空袭服役，打击伊斯兰国家目标。</td></tr><tr><td>A Trans Asia passenger airplane crashed into the Keelung River near Taipei Wednesday.</td><td>一架跨亚洲客机周三在台北基隆河坠毁。</td></tr><tr><td>At least 25 people were killed. Others are missing.</td><td>25人死亡，其他人失踪。</td></tr><tr><td><strong>Rescue workers</strong> in boats surrounded the plane and pulled out at least 15 passengers， including a young child.</td><td>救援人员乘船包围了飞机，救出了出至少15名乘客，其中包括一个小孩。</td></tr><tr><td>Video recordings of the crash showed the plane narrowly missing several tall buildings where people live.</td><td>坠毁的视频记录显示飞机险些撞上了几幢居住高楼。</td></tr><tr><td>The plane did hit a taxi on a road. The driver received minur <strong>minor injuries</strong>.</td><td>飞机确实撞到了路上的一辆出租车。出租车司机受了轻伤。</td></tr><tr><td>A similar airplane crashed on the <strong>Taiwanese</strong> island of Penghu last July.</td><td>去年7月，一架类似的飞机在台湾岛屿澎湖坠毁。</td></tr><tr><td>Forty-eight people were killed.</td><td>48人死亡。</td></tr><tr><td><strong>Somalia</strong> says a U.S. drone strike on Saturday killed its target, al-Shabab <strong>commander</strong> Yusuf Dheeg.</td><td>索马里说，美国无人机在周六袭击了目标青年党指挥官Yusuf Dheeg。</td></tr><tr><td>The government said in the a statement Wednesday that he died with other ouhcer al-Shabab commanders in the southern town of Dignosore Dinsor.</td><td>周三，政府在一份声明中说他和其他青年党指挥官在在丁索尔城镇南部丧生。</td></tr><tr><td>A source in the militant group confirmed Yusuf Dheeg’s death to the Somali Service.</td><td>据该激进组织的一名消息人士透漏他死于索马里军队、</td></tr><tr><td>The Somali government says he was responsible for planning attacks inside and outside Somalia.</td><td>索马里政府称是他负责策划了对索马里的内外袭击。</td></tr></tbody></table></div><h2 id="WHO-reports-a-rise-in-Ebola-cases-in-West-Africa"><a href="#WHO-reports-a-rise-in-Ebola-cases-in-West-Africa" class="headerlink" title="WHO reports a rise in Ebola cases in West Africa"></a>WHO reports a rise in Ebola cases in West Africa</h2><div class="table-container"><table><thead><tr><th>In English</th><th>中文</th></tr></thead><tbody><tr><td>The number of reported <strong>Ebola</strong> cases has increased for the first time this year.</td><td>据报道，埃博拉病例数目今年首次增加。</td></tr><tr><td>The world health organization says 124 new cases were reported in the week ending February 1.</td><td>世界卫生组织说，截止2月1号报告了124份新病例。</td></tr><tr><td>There were 80 new cases in Sierra Leone, 39 in Guinea and five in Liberia.</td><td>在塞拉利昂有80例，印古尼亚39例，利比里亚5例。</td></tr><tr><td>On <strong>Wednesday</strong> the WHO said there is an urgent need to end the <strong>outbreak</strong> before the rainy season begins.</td><td>周三世界卫生组织表示迫切需要在雨季开始前结束疫情。</td></tr><tr><td>Rural areas are harder to reach during that period.</td><td>在雨季，乡村地区更难到达。</td></tr><tr><td>Since the beginning of the Ebola outbreak， there have been almost 22,500 reported cases in the three countries, and nearly 9,000 death。</td><td>自埃博拉疫情爆发以来，这三个国家有报告了近22，500项病例，近9，000人死亡。</td></tr><tr><td>The number of new cases had gone down for several weeks，raising hopes the outbreak was ending.</td><td>新病例的数量已经下降了几周，提升了疫情结束的希望。</td></tr></tbody></table></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;table-container&quot;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;In English&lt;/th&gt;
+&lt;th&gt;中文&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Jordan executed two &lt;stro
+      
+    
+    </summary>
+    
+      <category term="English Learning" scheme="http://yoursite.com/categories/English-Learning/"/>
+    
+      <category term="Translation" scheme="http://yoursite.com/categories/English-Learning/Translation/"/>
+    
+    
+      <category term="English Learning" scheme="http://yoursite.com/tags/English-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Parameter Learning</title>
+    <link href="http://yoursite.com/2019/01/01/Parameter-Learning/"/>
+    <id>http://yoursite.com/2019/01/01/Parameter-Learning/</id>
+    <published>2019-01-01T13:45:16.000Z</published>
+    <updated>2019-04-16T14:09:12.951Z</updated>
+    
+    <content type="html"><![CDATA[<p>zxc</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;zxc&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Algorithms" scheme="http://yoursite.com/categories/Algorithms/"/>
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/categories/Algorithms/Machine-Learning/"/>
+    
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/tags/Machine-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Model and Cost Function</title>
+    <link href="http://yoursite.com/2018/12/29/Model-and-Cost-Function/"/>
+    <id>http://yoursite.com/2018/12/29/Model-and-Cost-Function/</id>
+    <published>2018-12-29T05:36:07.000Z</published>
+    <updated>2019-04-16T14:09:12.951Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/Supervised algorithm flow chart.png" alt=""></p><h2 id="Hypothesis-Linear-regression）"><a href="#Hypothesis-Linear-regression）" class="headerlink" title="Hypothesis (Linear regression）"></a>Hypothesis (Linear regression）</h2><script type="math/tex; mode=display">h_\theta(x_i)=\theta_0+\theta_1x_i</script><h2 id="Cost-function"><a href="#Cost-function" class="headerlink" title="Cost function"></a>Cost function</h2><p>measure the accuracy of our hypothesis function by using cost function</p><script type="math/tex; mode=display">J(\theta_0,\theta_1)=\frac{1}{2m}\sum_{i=1}^{m}(h_\theta(x_i)-y_i)^2</script><p>Note：$(\frac{1}{2})$ as a conveninece for the computation of the gradient descent.</p><h2 id="Goal-optimization-objective"><a href="#Goal-optimization-objective" class="headerlink" title="Goal (optimization objective)"></a>Goal (optimization objective)</h2><script type="math/tex; mode=display">\min_{\theta_0,\theta_1} J(\theta_0,\theta_1)</script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/Supervised algorithm flow chart.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Hypothesis-Linear-regression）&quot;&gt;&lt;a href=&quot;#Hypothesis-Linear-reg
+      
+    
+    </summary>
+    
+      <category term="Algorithms" scheme="http://yoursite.com/categories/Algorithms/"/>
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/categories/Algorithms/Machine-Learning/"/>
+    
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/tags/Machine-Learning/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>What is Machine Learning?</title>
+    <link href="http://yoursite.com/2018/12/27/What-is-Machine-Learning/"/>
+    <id>http://yoursite.com/2018/12/27/What-is-Machine-Learning/</id>
+    <published>2018-12-27T12:48:26.000Z</published>
+    <updated>2019-04-16T14:09:12.951Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h2><blockquote><p>Arthur Samuel:”the field of study that give computers the ability to learn without being explicitly programmed.”</p><p>Tom Mitchell:”A computer program is said to learn from experience E with respect to some class of tasks T and performance meassure P, if its performance at tasks in T, as measured by P, improves the experience E.”</p></blockquote><h2 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h2><h3 id="Supervised-learning"><a href="#Supervised-learning" class="headerlink" title="Supervised learning:"></a>Supervised learning:</h3><p>Given data with the corerect output.</p><blockquote><p>Regression problem: map input varioubles to some continuous funtion</p><p>Classification problem: map input varioubles into discrete categories</p><h3 id="Unsupervised-learning"><a href="#Unsupervised-learning" class="headerlink" title="Unsupervised learning"></a>Unsupervised learning</h3><p>Approach problems with little or no idea what our rersult should lool like.<br>Clustering: find a way to automatically group data into groups</p><p>Non-clustering: The “Cocktail Party Algorithm” allow you to find structure in a chaotic environment .</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Definition&quot;&gt;&lt;a href=&quot;#Definition&quot; class=&quot;headerlink&quot; title=&quot;Definition&quot;&gt;&lt;/a&gt;Definition&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Arthur Samuel:”the field 
+      
+    
+    </summary>
+    
+      <category term="Algorithms" scheme="http://yoursite.com/categories/Algorithms/"/>
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/categories/Algorithms/Machine-Learning/"/>
+    
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/tags/Machine-Learning/"/>
+    
+  </entry>
+  
+</feed>
